@@ -1,6 +1,6 @@
 ﻿namespace PaulineApp
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage
     {
         int count = 0;
 

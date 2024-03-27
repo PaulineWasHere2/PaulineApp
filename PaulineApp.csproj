@@ -49,7 +49,46 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="NewContent1.xaml.cs" />
+	  <Compile Remove="TabBar.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\icons8-ajouter-50.png" />
+	  <MauiImage Remove="Resources\Images\icons8-api-50.png" />
+	  <MauiImage Remove="Resources\Images\icons8-cadeau-50.png" />
+	  <MauiImage Remove="Resources\Images\icons8-gif-50.png" />
+	  <MauiImage Remove="Resources\Images\icons8-page-d’accueil-50.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="NewContent1.xaml" />
+	  <MauiXaml Remove="TabBar.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\icons8-ajouter-50.png" />
+	  <None Remove="Resources\Images\icons8-api-50.png" />
+	  <None Remove="Resources\Images\icons8-cadeau-50.png" />
+	  <None Remove="Resources\Images\icons8-gif-50.png" />
+	  <None Remove="Resources\Images\icons8-page-d’accueil-50.png" />
+	  <None Remove="TabBar.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="APIPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BonusPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ItemPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
