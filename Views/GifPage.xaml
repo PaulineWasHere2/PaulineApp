@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaulineApp.GifPage">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <WebView Source="https://media1.tenor.com/m/N_uDUe4ibYsAAAAC/limbus-company-ishmael-limbus-company.gif" 
+                     VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Retour à la page d'accueil" Clicked="OnBackButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

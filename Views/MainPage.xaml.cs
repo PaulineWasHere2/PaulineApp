@@ -1,6 +1,10 @@
-﻿namespace PaulineApp
+﻿using PdfKit;
+using Microsoft.Maui.Controls;
+using System;
+
+namespace PaulineApp
 {
-    public partial class MainPage
+    public partial class MainPage : ContentPage
     {
         int count = 0;
 
@@ -9,16 +13,9 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void OnGifButtonClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            await Navigation.PushAsync(new GifPage());
         }
     }
 }

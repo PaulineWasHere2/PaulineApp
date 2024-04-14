@@ -22,16 +22,32 @@
                 HorizontalOptions="Center" />
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                Text="Afficher le GIF"
+                Clicked="OnGifButtonClicked"
                 HorizontalOptions="Center" />
 
             <StackLayout Orientation="Horizontal">
                 <Image Source="Images/pequod_ish.jpg" WidthRequest="100" HeightRequest="100" />
                 <Image Source="Images/furina.jpg" WidthRequest="100" HeightRequest="100" />
             </StackLayout>
+
+            <CarouselView IndicatorView="indicatorView">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String >Item 1</x:String>
+                        <x:String >Item 2</x:String>
+                        <x:String >Item 3</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout BackgroundColor="Beige" Padding="10">
+                            <Label FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="{Binding .}"/>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="indicatorView" Margin="5" HorizontalOptions="Center" IndicatorColor="DarkSlateBlue" SelectedIndicatorColor="BlueViolet"/>
 
         </VerticalStackLayout>
     </ScrollView>
