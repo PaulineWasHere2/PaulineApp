@@ -1,12 +1,11 @@
-﻿using PdfKit;
-using Microsoft.Maui.Controls;
+﻿using Microsoft.Maui.Controls;
 using System;
+using  PaulineApp.Views;
 
 namespace PaulineApp
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
 
         public MainPage()
         {
