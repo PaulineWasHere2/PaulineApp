@@ -8,25 +8,25 @@
     <TabBar>
         <ShellContent
         Title="Accueil"
-        Icon="C:\Users\pauli\source\repos\PaulineApp\Resources\AppIcon\icons8-page-d’accueil-50.png"
+        Icon="icons8-page-d’accueil-50"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
         <ShellContent
         Title="API"
-        Icon="C:\Users\pauli\source\repos\PaulineApp\Resources\AppIcon\icons8-api-50.png"
+        Icon="icons8-api-50"
         ContentTemplate="{DataTemplate local:APIPage}"
         Route="APIPage" />
 
         <ShellContent
         Title="Item"
-        Icon="C:\Users\pauli\source\repos\PaulineApp\Resources\AppIcon\icons8-ajouter-50.png"
+        Icon="icons8-ajouter-50"
         ContentTemplate="{DataTemplate local:ItemPage}"
         Route="ItemPage" />
 
         <ShellContent
         Title="Bonus"
-        Icon="C:\Users\pauli\source\repos\PaulineApp\Resources\AppIcon\icons8-cadeau-50.png"
+        Icon="icons8-cadeau-50"
         ContentTemplate="{DataTemplate local:BonusPage}"
         Route="BonusPage" />
 
