@@ -3,18 +3,18 @@ using PaulineApp.Models;
 using PaulineApp.Helpers;
 using System.Collections.ObjectModel;
 using Newtonsoft.Json;
-
+using PaulineApp.Views;
 
 namespace PaulineApp.ViewModels
 {
 
-    public class PastLaunchesViewModel : BaseViewModel
+    public class APIPage : BaseViewModel
     {
         public ObservableCollection<Root> LatestLaunchs { get; set; }
 
         private readonly HttpClient _client;
 
-        public PastLaunchesViewModel()
+        public APIPage()
         {
             _client = new HttpClient();
             LatestLaunchs = new ObservableCollection<Root>();
